@@ -24,6 +24,9 @@ sao bcd-first-scaffolding my-project
 sao bryanalx/sao-bcd-first-scaffolding my-project
 ```
 
+### Notas
+- Para acceder a una variables recibida como entra en default, maneja como una funcion y que reciba ese parametro
+
 ## License
 
 MIT &copy; [bryanalx](github.com/bryanalx)

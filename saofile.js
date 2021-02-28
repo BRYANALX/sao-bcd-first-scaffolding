@@ -1,35 +1,35 @@
-const superb = require('superb')
-
 module.exports = {
   prompts() {
     return [
       {
         name: 'name',
-        message: 'What is the name of the new project',
+        message: '¿Cuál es el nombre para tu nuevo proyecto?',
         default: this.outFolder,
-        filter: val => val.toLowerCase()
+        filter: val => val.toLowerCase(),
       },
       {
         name: 'description',
-        message: 'How would you descripe the new project',
-        default: `my ${superb()} project`
+        message: '¿Cuál es la descripción del proyecto?',
+        default({ name }) {
+          return `${name} el super proyecto`;
+        },
       },
       {
         name: 'username',
-        message: 'What is your GitHub username',
+        message: '¿Cuál es tu usuario de GitHub?',
         default: this.gitUser.username || this.gitUser.name,
         filter: val => val.toLowerCase(),
         store: true
       },
       {
         name: 'email',
-        message: 'What is your email?',
+        message: '¿Cuál es tu correo electrónico?',
         default: this.gitUser.email,
         store: true
       },
       {
         name: 'website',
-        message: 'The URL of your website',
+        message: 'La URL de tu sitio web',
         default({ username }) {
           return `github.com/${username}`
         },
