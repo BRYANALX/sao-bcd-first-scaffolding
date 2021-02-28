@@ -18,10 +18,16 @@ npm i -g sao
 sao bcd-first-scaffolding my-project
 ```
 
-### From git
+### From GitHub
 
 ```bash
 sao bryanalx/sao-bcd-first-scaffolding my-project
+```
+
+### From GitLab
+
+```bash
+sao gitlab:bryancondor/sao-bcd-first-scaffolding my-project
 ```
 
 ### Notas
