@@ -1,0 +1,25 @@
+{
+  "name": "sao-bcd-first-scaffolding",
+  "version": "0.0.0",
+  "description": "Primer generador con Sao.Js",
+  "repository": {
+    "url": "bryanalx/sao-bcd-first-scaffolding",
+    "type": "git"
+  },
+  "author": "bryanalx <bryanalexandercd@gmail.com> (github.com/bryanalx)",
+  "license": "MIT",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "superb": "^1.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "sao": "^1.0.0"
+  }
+}
